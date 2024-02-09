@@ -1,15 +1,8 @@
 {
   "compilerOptions": {
-    "declaration": true,
-    "outDir": "dist/",
-    "sourceMap": true,
+    "target": "es5",
+    "module": "CommonJS",
     "strict": true,
-    "target": "ES2015",
-    "module": "commonjs",
-    "strictNullChecks": true,
-    "noErrorTruncation": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true
-  },
-  "include": ["src/**/*.ts"]
+    "esModuleInterop": true
+  }
 }
