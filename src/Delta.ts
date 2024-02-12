@@ -336,6 +336,15 @@ class Delta {
     return delta;
   }
 
+  concat2(other: Delta): Delta {
+    const delta = new Delta(this.ops.slice());
+    for (let index = 0; index < other.ops.length; index++) {
+      let currentOp = other.ops[index];
+      delta.push(currentOp);
+    }
+    return delta;
+  }
+
   diff(other: Delta, cursor?: number | diff.CursorInfo): Delta {
     if (this.ops === other.ops) {
       return new Delta();
