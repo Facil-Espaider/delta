@@ -20,10 +20,11 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   output: {
-    filename: 'bundle.js',
+    filename: 'quill-delta.js',
     path: path.resolve(__dirname, 'dist'),
     library: 'Delta',
-    libraryTarget: 'var'
+    libraryTarget: 'var',
+    clean: true
   },
   target: 'node'
 };
