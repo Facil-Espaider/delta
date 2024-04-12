@@ -45,7 +45,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "buildWeb": "webpack",
+    "generate:package": "webpack",
     "prepare": "npm run build",
     "lint": "eslint 'src/**/*.ts'",
     "test": "jasmine --config=jasmine.json",
